@@ -1,32 +1,73 @@
-import '../data/notas.dart';
+import 'package:sqlite3/sqlite3.dart';
 
-// Serviço para gerenciar as notas fiscais
 class NotaService {
-  List getAll() {
-    return notas.values.toList();
+  final Database db;
+
+  NotaService(this.db);
+
+  List<Map<String, dynamic>> getAll() {
+    final result = db.select('SELECT * FROM notas');
+
+    return result.map((row) => {
+      "numero": row["numero"],
+      "empresa": row["empresa"],
+      "cnpj": row["cnpj"],
+      "valor": row["valor"],
+      "data": row["data"],
+    }).toList();
   }
 
   Map<String, dynamic>? getById(String id) {
-    return notas[id];
-  }
+    final result = db.select(
+      'SELECT * FROM notas WHERE numero = ?',
+      [id],
+    );
 
-  void create(String id, Map<String, dynamic> data) {
-    notas[id] = data;
-  }
+    if (result.isEmpty) return null;
 
-  void update(String id, Map<String, dynamic> data) {
-    final existing = notas[id];
+    final row = result.first;
 
-    notas[id] = {
-      "numero": id,
-      "empresa": data['empresa'] ?? existing?['empresa'],
-      "cnpj": data['cnpj'] ?? existing?['cnpj'],
-      "valor": data['valor'] ?? existing?['valor'],
-      "data": data['data'] ?? existing?['data'],
+    return {
+      "numero": row["numero"],
+      "empresa": row["empresa"],
+      "cnpj": row["cnpj"],
+      "valor": row["valor"],
+      "data": row["data"],
     };
   }
 
+  void create(Map data) {
+    db.execute('''
+      INSERT OR REPLACE INTO notas
+      (numero, empresa, cnpj, valor, data)
+      VALUES (?, ?, ?, ?, ?)
+    ''', [
+      data['numero'],
+      data['empresa'],
+      data['cnpj'],
+      data['valor'],
+      data['data']
+    ]);
+  }
+
+  void update(String id, Map data) {
+    db.execute('''
+      UPDATE notas
+      SET empresa = ?, cnpj = ?, valor = ?, data = ?
+      WHERE numero = ?
+    ''', [
+      data['empresa'],
+      data['cnpj'],
+      data['valor'],
+      data['data'],
+      id
+    ]);
+  }
+
   void delete(String id) {
-    notas.remove(id);
+    db.execute(
+      'DELETE FROM notas WHERE numero = ?',
+      [id],
+    );
   }
 }
