@@ -1,5 +1,6 @@
 import 'package:shelf_router/shelf_router.dart';
 import '../controllers/nota_controller.dart';
+import 'package:shelf/shelf.dart';
 
 // Função para criar as rotas da API.
 Router createRoutes() {
