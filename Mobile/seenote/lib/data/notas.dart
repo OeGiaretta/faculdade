@@ -1,3 +1,4 @@
+// Dados das notas fiscais
 final Map<String, Map<String, dynamic>> notas = {
   "1001": {
     "numero": "1001",
