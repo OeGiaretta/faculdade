@@ -1,2 +1,9 @@
-# faculdade
-Cosias da faculdade para salvar
+# 📁 Faculdade
+
+Repositório central de estudos e projetos da faculdade.
+
+## 📂 Estrutura
+
+- backend/
+- web/
+- scripts/
