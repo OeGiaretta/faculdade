@@ -1,0 +1,8 @@
+name: nexuspericia
+description: Sistema de Investigação Criminal e Perícia Digital
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  postgres: ^2.6.3
