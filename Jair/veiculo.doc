@@ -1,0 +1,28 @@
+from abc import ABC, abstractmethod
+
+class Veiculo(ABC):
+
+    @abstractmethod
+    def dirigir(self):
+        pass
+    
+
+class Carro(Veiculo):
+
+    def dirigir(self):
+        print("O carro está sendo dirigido.")
+
+
+class Moto(Veiculo):
+
+    def dirigir(self):
+        print("A moto está sendo pilotada.")
+
+
+carro = Carro()
+moto = Moto()
+
+print("Programa iniciado")
+
+carro.dirigir()
+moto.dirigir()
