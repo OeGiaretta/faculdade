@@ -8,7 +8,7 @@ O **Synora Acadêmico** é um projeto acadêmico desenvolvido com **Flutter e Da
 
 ## 📱 Baixar para Android
 
-[![Download do APK](https://img.shields.io/badge/Baixar-APK%20Android-587C78?style=for-the-badge&logo=android&logoColor=white)](https://github.com/OeGiaretta/Synora-Academico/releases/latest)
+[![Baixar APK](https://img.shields.io/badge/Download-Synora%20APK-587C78?style=for-the-badge&logo=android&logoColor=white)](https://github.com/OeGiaretta/faculdade/releases/download/synora-v1.0.0/Synora.apk)
 
 **[Acessar a versão mais recente e baixar o APK](https://github.com/OeGiaretta/Synora-Academico/releases/latest)**
 
