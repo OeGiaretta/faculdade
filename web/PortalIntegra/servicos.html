@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Serviços acadêmicos da Universidade Integra.">
+
+    <title>Serviços | Integra</title>
+
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">I</span>
+                <span>INTEGRA</span>
+            </a>
+
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Início</a>
+                <a href="servicos.html" class="nav-link active">Serviços</a>
+                <a href="recursos.html" class="nav-link">Recursos</a>
+                <a href="contato.html" class="nav-link">Contato</a>
+            </nav>
+
+            <a href="contato.html" class="btn btn-primary">
+                Fale conosco
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+        <section class="page-hero">
+
+            <div class="container page-hero-grid">
+
+                <div class="page-hero-content">
+
+                    <div class="hero-badge">
+                        <span></span>
+                        SERVIÇOS ACADÊMICOS
+                    </div>
+
+                    <h1>
+                        Ferramentas para
+                        <span>facilitar sua jornada.</span>
+                    </h1>
+
+                    <p>
+                        O Portal Acadêmico Integra reúne serviços desenvolvidos
+                        para ajudar você a organizar seus estudos e sua rotina
+                        universitária.
+                    </p>
+
+                </div>
+
+                <div class="page-hero-code">
+
+                    <div class="code-card">
+
+                        <div class="code-header">
+                            <div class="code-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <span>servicos.js</span>
+                        </div>
+
+                        <div class="code-content">
+
+<pre><span class="code-comment">// Serviços disponíveis</span>
+
+<span class="code-keyword">const</span> servicos = [
+    <span class="code-string">"notas"</span>,
+    <span class="code-string">"agenda"</span>,
+    <span class="code-string">"tarefas"</span>,
+    <span class="code-string">"materiais"</span>,
+    <span class="code-string">"foco"</span>
+];
+
+<span class="code-keyword">return</span> servicos;</pre>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SERVIÇOS -->
+        <section class="services-page-section section">
+
+            <div class="container">
+
+                <div class="section-label">
+                    NOSSOS SERVIÇOS
+                </div>
+
+                <div class="section-heading">
+
+                    <h2>
+                        Tudo para sua rotina
+                        <span>acadêmica.</span>
+                    </h2>
+
+                    <p>
+                        Escolha uma das ferramentas disponíveis
+                        e aproveite melhor seu tempo.
+                    </p>
+
+                </div>
+
+
+                <div class="filter-panel">
+                    <label for="filtroCategoria">Filtrar serviços por categoria</label>
+                    <select id="filtroCategoria">
+                        <option value="todos">Todos os serviços</option>
+                        <option value="desempenho">Desempenho</option>
+                        <option value="organizacao">Organização</option>
+                        <option value="produtividade">Produtividade</option>
+                        <option value="aprendizagem">Aprendizagem</option>
+                    </select>
+                    <p id="mensagemFiltro" aria-live="polite"></p>
+                </div>
+                <div class="services-list" id="listaServicos">
+
+
+                    <!-- SERVIÇO 01 -->
+                    <article class="service-card">
+
+                        <div class="service-card-top">
+
+                            <div class="service-icon">
+                                📊
+                            </div>
+
+                            <span class="service-number">
+                                01
+                            </span>
+
+                        </div>
+
+                        <div class="service-card-content">
+
+                            <span class="service-tag">
+                                DESEMPENHO
+                            </span>
+
+                            <h3>
+                                Calculadora de Notas
+                            </h3>
+
+                            <p>
+                                Calcule sua média acadêmica e descubra
+                                quanto precisa alcançar para atingir seus
+                                objetivos.
+                            </p>
+
+                            <ul class="service-features">
+                                <li>Cálculo de médias</li>
+                                <li>Nota necessária</li>
+                                <li>Situação acadêmica</li>
+                            </ul>
+
+                            <a href="#" class="service-action">
+                                Acessar serviço →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- SERVIÇO 02 -->
+                    <article class="service-card">
+
+                        <div class="service-card-top">
+
+                            <div class="service-icon">
+                                📅
+                            </div>
+
+                            <span class="service-number">
+                                02
+                            </span>
+
+                        </div>
+
+                        <div class="service-card-content">
+
+                            <span class="service-tag">
+                                ORGANIZAÇÃO
+                            </span>
+
+                            <h3>
+                                Agenda Acadêmica
+                            </h3>
+
+                            <p>
+                                Organize provas, trabalhos, apresentações
+                                e outros compromissos importantes.
+                            </p>
+
+                            <ul class="service-features">
+                                <li>Controle de prazos</li>
+                                <li>Provas e trabalhos</li>
+                                <li>Organização semanal</li>
+                            </ul>
+
+                            <a href="#" class="service-action">
+                                Acessar serviço →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- SERVIÇO 03 -->
+                    <article class="service-card">
+
+                        <div class="service-card-top">
+
+                            <div class="service-icon">
+                                ✅
+                            </div>
+
+                            <span class="service-number">
+                                03
+                            </span>
+
+                        </div>
+
+                        <div class="service-card-content">
+
+                            <span class="service-tag">
+                                PRODUTIVIDADE
+                            </span>
+
+                            <h3>
+                                Lista de Tarefas
+                            </h3>
+
+                            <p>
+                                Organize suas atividades acadêmicas e
+                                acompanhe tudo o que precisa ser feito.
+                            </p>
+
+                            <ul class="service-features">
+                                <li>Tarefas pendentes</li>
+                                <li>Prioridades</li>
+                                <li>Atividades concluídas</li>
+                            </ul>
+
+                            <a href="#" class="service-action">
+                                Acessar serviço →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- SERVIÇO 04 -->
+                    <article class="service-card">
+
+                        <div class="service-card-top">
+
+                            <div class="service-icon">
+                                📚
+                            </div>
+
+                            <span class="service-number">
+                                04
+                            </span>
+
+                        </div>
+
+                        <div class="service-card-content">
+
+                            <span class="service-tag">
+                                APRENDIZAGEM
+                            </span>
+
+                            <h3>
+                                Materiais de Estudo
+                            </h3>
+
+                            <p>
+                                Encontre materiais e recursos que podem
+                                auxiliar durante sua formação acadêmica.
+                            </p>
+
+                            <ul class="service-features">
+                                <li>Materiais de apoio</li>
+                                <li>Links úteis</li>
+                                <li>Recursos acadêmicos</li>
+                            </ul>
+
+                            <a href="#" class="service-action">
+                                Acessar serviço →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- SERVIÇO 05 -->
+                    <article class="service-card">
+
+                        <div class="service-card-top">
+
+                            <div class="service-icon">
+                                ⏱️
+                            </div>
+
+                            <span class="service-number">
+                                05
+                            </span>
+
+                        </div>
+
+                        <div class="service-card-content">
+
+                            <span class="service-tag">
+                                FOCO
+                            </span>
+
+                            <h3>
+                                Foco nos Estudos
+                            </h3>
+
+                            <p>
+                                Utilize técnicas de organização de tempo
+                                para manter o foco durante seus estudos.
+                            </p>
+
+                            <ul class="service-features">
+                                <li>Pomodoro</li>
+                                <li>Sessões de estudo</li>
+                                <li>Pausas programadas</li>
+                            </ul>
+
+                            <a href="#" class="service-action">
+                                Acessar serviço →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ÁREAS -->
+        <section class="areas-section section">
+
+            <div class="container">
+
+                <div class="section-label">
+                    RECURSOS
+                </div>
+
+                <div class="section-heading">
+
+                    <h2>
+                        Desenvolva uma rotina
+                        <span>mais eficiente.</span>
+                    </h2>
+
+                </div>
+
+                <div class="areas-grid">
+
+                    <div class="area-item">
+                        <div class="area-icon">📈</div>
+
+                        <div>
+                            <h3>Acompanhe seu desempenho</h3>
+
+                            <p>
+                                Tenha uma visão mais clara da sua evolução.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="area-item">
+                        <div class="area-icon">🗓️</div>
+
+                        <div>
+                            <h3>Organize seus prazos</h3>
+
+                            <p>
+                                Evite esquecer atividades e compromissos.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="area-item">
+                        <div class="area-icon">🎯</div>
+
+                        <div>
+                            <h3>Defina seus objetivos</h3>
+
+                            <p>
+                                Transforme seus objetivos em ações.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="area-item">
+                        <div class="area-icon">🧠</div>
+
+                        <div>
+                            <h3>Estude com mais foco</h3>
+
+                            <p>
+                                Organize seu tempo e aproveite melhor seus estudos.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">I</span>
+                    <span>INTEGRA</span>
+                </a>
+
+                <p>
+                    Portal Acadêmico da Universidade Integra.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <a href="index.html">Início</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="recursos.html">Recursos</a>
+                <a href="contato.html">Contato</a>
+
+            </div>
+
+        </div>
+
+        <div class="container footer-bottom">
+
+            <p>
+                © 2026 Universidade Integra. Projeto acadêmico.
+            </p>
+
+        </div>
+
+    </footer>
+
+<script src="js/servicos.js" defer></script>
+</body>
+</html>
